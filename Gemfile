@@ -6,6 +6,8 @@ gem 'rails', '4.2.5'
 
 gem 'rails-api'
 
+gem 'rack-cors', :require => 'rack/cors'
+
 # Use postgresql as the database for Active Record
 gem 'pg', '~> 0.15'
 # Use SCSS for stylesheets
