@@ -12,9 +12,9 @@ Student.create(id: 3, student_id: SecureRandom.uuid, first_name: "kate", last_na
 Student.create(id: 4, student_id: SecureRandom.uuid, first_name: "john", last_name: "smith", gender: "male", date_of_birth: "1991-10-03")
 
 Course.delete_all
-Course.create(id: 1, name: "math", number: "001", section: "a")
-Course.create(id: 2, name: "calculus", number: "001", section: "a")
-Course.create(id: 3, name: "programming", number: "002", section: "a")
+Course.create(name: "math", number: "001", section: "a")
+Course.create(name: "calculus", number: "001", section: "a")
+Course.create(name: "programming", number: "002", section: "a")
 
 Enrollment.delete_all
 Enrollment.create(course_id: 1, student_id: 1)
