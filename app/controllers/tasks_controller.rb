@@ -48,7 +48,7 @@ class TasksController < ApplicationController
   private
 
   def allowed_params
-    params.require(:task).permit(:name, :type, :max_points, :weight)
+    params.require(:task).permit(:course_id, :name, :task_type, :max_points, :weight)
   end
 
 end
