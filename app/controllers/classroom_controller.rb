@@ -5,7 +5,10 @@ class ClassroomController < ApplicationController
     render json: @course, :include => :students
   end
 
-
+  def get_coursework
+  	@course = Course.where(id: params[:course_id])
+    render json: @course, :include => :tasks
+  end
 
   private
 
